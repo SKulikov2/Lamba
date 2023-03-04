@@ -243,6 +243,32 @@ body {
     color: #fff;
 }
 
+.evo-black__inner {
+    position: relative;
+}
+
+.evo-black__inner::before{
+    content: '';
+    background-image: url(../images/dec-1.svg);
+    width: 185px;
+    height: 213px;
+    position: absolute;
+    top: 90px;
+    left: -70px;
+    scale: 0.9;
+}  
+
+.evo-black__inner::after{
+    content: '';
+    background-image: url(../images/dec-2.svg);
+    width: 498px;
+    height: 572px;
+    position: absolute;
+    top: 140px;
+    left: -10px;
+    scale: 0.9;
+}  
+
 .evo-black__info {
     display: flex;
     justify-content: space-between;
@@ -267,7 +293,9 @@ body {
 
 .evo-black__img {
     display: block;
-    margin: 30px auto 30px;
+    margin: 30px auto 30px; 
+    position: relative;
+    z-index: 1;
 }
 
 .evo__descr-list {
@@ -278,7 +306,30 @@ body {
 
 .evo-white__inner{
     padding-top: 50px;
+    position: relative;
 }
+
+.evo-white__inner::before{
+    content: '';
+    background-image: url(../images/dec-3.png);
+    width: 274px;
+    height: 252px;
+    position: absolute;
+    top: -30px;
+    left: 380px;
+    scale: 0.9;
+}  
+
+.evo-white__inner::after{
+    content: '';
+    background-image: url(../images/dec-4.png);
+    width: 324px;
+    height: 303px;
+    position: absolute;
+    top: 80px;
+    left: 600px;
+    scale: 0.9;
+}  
 
 .evo-white__text {
     margin-bottom: 30px;
@@ -312,5 +363,29 @@ body {
 .evo-white__video-link span {
     color: #fff;
     display: block;
+}
 
+.blog {
+    margin-bottom: 100px;
+}
+
+.blog__title {
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.blog__item-img {
+    margin-bottom: 20px;
+}
+
+.blog__item-title {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    min-height: 46px;
+}
+
+.blog__item-text {
+    margin-bottom: 10px;
 }
